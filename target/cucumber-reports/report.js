@@ -70,6 +70,10 @@ formatter.examples({
   ],
   "keyword": "Examples"
 });
+formatter.before({
+  "duration": 305300,
+  "status": "passed"
+});
 formatter.scenario({
   "line": 11,
   "name": "Ingresar a la Web MI ARGENTINA",
@@ -103,10 +107,10 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "DefinitionMiArgentina.EntrarAGoogle()"
+  "location": "DefinitionMiArgentina.IngresarAMiArgentina()"
 });
 formatter.result({
-  "duration": 10273460400,
+  "duration": 10522160800,
   "status": "passed"
 });
 formatter.match({
@@ -123,15 +127,15 @@ formatter.match({
   "location": "DefinitionMiArgentina.IngresarConUser(String,String)"
 });
 formatter.result({
-  "duration": 927189700,
+  "duration": 1212975000,
   "status": "passed"
 });
 formatter.match({
   "location": "DefinitionMiArgentina.VerificarMenuPrincipal()"
 });
 formatter.result({
-  "duration": 6814710700,
-  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat pages.MainPageMiArgentina.verificarMenuPrincipal(MainPageMiArgentina.java:42)\r\n\tat Steps.DefinitionMiArgentina.VerificarMenuPrincipal(DefinitionMiArgentina.java:54)\r\n\tat ✽.Then se verifica menu princial(miArgentina.feature:6)\r\n",
+  "duration": 8378888800,
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat pages.MainPageMiArgentina.verificarMenuPrincipal(MainPageMiArgentina.java:42)\r\n\tat Steps.DefinitionMiArgentina.VerificarMenuPrincipal(DefinitionMiArgentina.java:46)\r\n\tat ✽.Then se verifica menu princial(miArgentina.feature:6)\r\n",
   "status": "failed"
 });
 formatter.match({
@@ -145,6 +149,10 @@ formatter.match({
 });
 formatter.result({
   "status": "skipped"
+});
+formatter.before({
+  "duration": 43700,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 12,
@@ -179,10 +187,10 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "DefinitionMiArgentina.EntrarAGoogle()"
+  "location": "DefinitionMiArgentina.IngresarAMiArgentina()"
 });
 formatter.result({
-  "duration": 8220404500,
+  "duration": 11712695000,
   "status": "passed"
 });
 formatter.match({
@@ -199,15 +207,15 @@ formatter.match({
   "location": "DefinitionMiArgentina.IngresarConUser(String,String)"
 });
 formatter.result({
-  "duration": 841879500,
+  "duration": 1846953700,
   "status": "passed"
 });
 formatter.match({
   "location": "DefinitionMiArgentina.VerificarMenuPrincipal()"
 });
 formatter.result({
-  "duration": 6705514000,
-  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat pages.MainPageMiArgentina.verificarMenuPrincipal(MainPageMiArgentina.java:42)\r\n\tat Steps.DefinitionMiArgentina.VerificarMenuPrincipal(DefinitionMiArgentina.java:54)\r\n\tat ✽.Then se verifica menu princial(miArgentina.feature:6)\r\n",
+  "duration": 8731090100,
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat pages.MainPageMiArgentina.verificarMenuPrincipal(MainPageMiArgentina.java:42)\r\n\tat Steps.DefinitionMiArgentina.VerificarMenuPrincipal(DefinitionMiArgentina.java:46)\r\n\tat ✽.Then se verifica menu princial(miArgentina.feature:6)\r\n",
   "status": "failed"
 });
 formatter.match({

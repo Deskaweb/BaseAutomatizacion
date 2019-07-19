@@ -13,22 +13,13 @@ import pages.MainPageMiArgentina;
 
 public class DefinitionMiArgentina extends TestBase {
 
-    //private WebDriver webDriver;
-
-
     LoginPageMiArgentina page = new LoginPageMiArgentina(webDriver);
     MainPageMiArgentina mainPage = new MainPageMiArgentina(webDriver);
 
     @Given("^se ingresa a la web Mi Argentina$")
-    public void EntrarAGoogle(){
-        ////De esto se encarga el TestBase
-        System.setProperty("webdriver.chrome.driver", "./src\\main\\resources\\bin\\chromedriver.exe");
-        //Se hereda el webdriver del testbase y se abre la pagina desde el metodo de la clase LoginPageMiArgentina
-
-        //page.ingresarWeb(webDriver);
+    public void IngresarAMiArgentina(){
 
         webDriver = new ChromeDriver();
-        webDriver.manage().window().maximize();
         webDriver.get("https://id.argentina.gob.ar/ingresar/?next=/");
         webDriver.manage().window().maximize();
         page.buscarElementos(webDriver);
@@ -39,28 +30,29 @@ public class DefinitionMiArgentina extends TestBase {
     @When("^se ingresa con el usuario \"([^\"]*)\" y la \"([^\"]*)\"$")
     public void IngresarConUser(String user, String pass){
 
-
+        //Se ingresa el ususario y la contraseña y hace click en ingresar
         page.ingresarUsuario(user, pass);
     }
 
     @Then("se verifica menu princial")
     public void VerificarMenuPrincipal(){
-        WebElement BTN_GUARDARCAMBIOS;// = webDriver.findElement(By.xpath("/html/body/main/section/div/div/div/div/div[2]/form/fieldset/div[4]/div/div/button"));
-        BTN_GUARDARCAMBIOS = webDriver.findElement(By.xpath("//*[@class='btn btn-link']"));
-        BTN_GUARDARCAMBIOS.click();
+        //Metodo que hace click en guardar cambios
+        page.guardarCambios(webDriver);
 
         mainPage.espera(4);
+        //Se buscan los elementos de la mainpage
         mainPage.buscarElementos(webDriver);
+        //ESTE ESTA DANDO ERROR
         mainPage.verificarMenuPrincipal();
     }
 
     @When("se ingresa al menu \"([^\"]*)\"$")
-    public void IngresarAMenu(String Menu){
-       if ("Billetera".equals(Menu)) {
+    public void IngresarAMenu(String menu){
+       if ("Billetera".equals(menu)) {
            mainPage.ingresarAMiBilletera();
-        } else if ("Salud".equals(Menu)) {
+        } else if ("Salud".equals(menu)) {
            mainPage.ingresarAMiSalud();
-        } else if ("Turnos".equals(Menu)) {
+        } else if ("Turnos".equals(menu)) {
            mainPage.ingresarAMisTurnos();
         }
 
