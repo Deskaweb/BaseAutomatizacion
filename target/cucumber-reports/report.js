@@ -106,7 +106,7 @@ formatter.match({
   "location": "DefinitionMiArgentina.EntrarAGoogle()"
 });
 formatter.result({
-  "duration": 5594602498,
+  "duration": 10273460400,
   "status": "passed"
 });
 formatter.match({
@@ -123,15 +123,15 @@ formatter.match({
   "location": "DefinitionMiArgentina.IngresarConUser(String,String)"
 });
 formatter.result({
-  "duration": 1084753612,
+  "duration": 927189700,
   "status": "passed"
 });
 formatter.match({
   "location": "DefinitionMiArgentina.VerificarMenuPrincipal()"
 });
 formatter.result({
-  "duration": 635448,
-  "error_message": "java.lang.NullPointerException\r\n\tat pages.PageMiArgentina.LBL_MICUENTA(PageMiArgentina.java:18)\r\n\tat pages.PageMiArgentina.verificarMenuPrincipal(PageMiArgentina.java:46)\r\n\tat Steps.DefinitionMiArgentina.VerificarMenuPrincipal(DefinitionMiArgentina.java:40)\r\n\tat ✽.Then se verifica menu princial(miArgentina.feature:6)\r\n",
+  "duration": 6814710700,
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat pages.MainPageMiArgentina.verificarMenuPrincipal(MainPageMiArgentina.java:42)\r\n\tat Steps.DefinitionMiArgentina.VerificarMenuPrincipal(DefinitionMiArgentina.java:54)\r\n\tat ✽.Then se verifica menu princial(miArgentina.feature:6)\r\n",
   "status": "failed"
 });
 formatter.match({
@@ -182,7 +182,7 @@ formatter.match({
   "location": "DefinitionMiArgentina.EntrarAGoogle()"
 });
 formatter.result({
-  "duration": 4670068432,
+  "duration": 8220404500,
   "status": "passed"
 });
 formatter.match({
@@ -199,15 +199,15 @@ formatter.match({
   "location": "DefinitionMiArgentina.IngresarConUser(String,String)"
 });
 formatter.result({
-  "duration": 909493217,
+  "duration": 841879500,
   "status": "passed"
 });
 formatter.match({
   "location": "DefinitionMiArgentina.VerificarMenuPrincipal()"
 });
 formatter.result({
-  "duration": 168391,
-  "error_message": "java.lang.NullPointerException\r\n\tat pages.PageMiArgentina.LBL_MICUENTA(PageMiArgentina.java:18)\r\n\tat pages.PageMiArgentina.verificarMenuPrincipal(PageMiArgentina.java:46)\r\n\tat Steps.DefinitionMiArgentina.VerificarMenuPrincipal(DefinitionMiArgentina.java:40)\r\n\tat ✽.Then se verifica menu princial(miArgentina.feature:6)\r\n",
+  "duration": 6705514000,
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat pages.MainPageMiArgentina.verificarMenuPrincipal(MainPageMiArgentina.java:42)\r\n\tat Steps.DefinitionMiArgentina.VerificarMenuPrincipal(DefinitionMiArgentina.java:54)\r\n\tat ✽.Then se verifica menu princial(miArgentina.feature:6)\r\n",
   "status": "failed"
 });
 formatter.match({

@@ -19,8 +19,9 @@ public class Tests {
     {
         System.setProperty("webdriver.chrome.driver","src/main/resources/bin/chromedriver.exe");
         webDriver = new ChromeDriver();
-        webDriver.get("https://mi.argentina.gob.ar");
+        webDriver.get("https://id.argentina.gob.ar/ingresar/?next=/");
         Login login = new Login(webDriver);
+        //login.espera(15);
         login.getTextBoxCuilOPasaporte().sendKeys("20375568897");
         login.getTextBoxContraseña().sendKeys("37556889Ga");
         login.getButtonIngresar().click();

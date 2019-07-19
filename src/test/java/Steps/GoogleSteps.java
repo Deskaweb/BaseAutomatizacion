@@ -2,6 +2,7 @@ package Steps;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -28,6 +29,18 @@ public class GoogleSteps {
     public void BuscarPalabra(){
         TXT_CUIT().sendKeys("20387030019");
         TXT_PASS().sendKeys("Brenda1502");
+        BTN_INGRESAR().click();
+    }
+
+    @Test
+    public void google()
+    {
+        System.setProperty("webdriver.chrome.driver", "./src\\main\\resources\\bin\\chromedriver.exe");
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("https://www.google.com.ar");
+        TXT_CUIT().sendKeys("20387030019");
+        TXT_PASS().sendKeys("Pda@1305");
         BTN_INGRESAR().click();
     }
 
