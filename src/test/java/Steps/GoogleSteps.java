@@ -11,20 +11,24 @@ public class GoogleSteps {
 
 
     private WebDriver driver;
-    private WebElement BUSCARBOX() {return driver.findElement(By.xpath("//*[@id='tsf']/div[2]/div/div[1]/div/div[1]/input"));}
+
+    private WebElement TXT_CUIT() {return driver.findElement(By.cssSelector("#cuil"));}
+    private WebElement TXT_PASS() {return driver.findElement(By.xpath("//*[@id='password_confirmacion']"));}
+    private WebElement BTN_INGRESAR() {return driver.findElement(By.xpath("//*[@id='login']"));}
 
     @Given("^se entra a Google$")
     public void EntrarAGoogle(){
         System.setProperty("webdriver.chrome.driver", "./src\\main\\resources\\bin\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://www.google.com");
+        driver.get("https://id.argentina.gob.ar/ingresar");
     }
 
     @When("^se busca la frase")
     public void BuscarPalabra(){
-        BUSCARBOX().sendKeys("Esto es una frase");
-        BUSCARBOX().submit();
+        TXT_CUIT().sendKeys("20387030019");
+        TXT_PASS().sendKeys("Brenda1502");
+        BTN_INGRESAR().click();
     }
 
 }
